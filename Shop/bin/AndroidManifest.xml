@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shop"
+    android:versionCode="1"
+    android:versionName="1.0" 
+    android:installLocation="preferExternal">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.shop.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="login" android:name=".login"/>
+        <activity android:label="major" android:name=".major"/>
+        <activity android:label="major2" android:name=".major2"/>
+        <activity android:label="personal" android:name=".personal"/>
+        <activity android:label="sbuyinf" android:name=".sbuyinf"/>
+        <activity android:label="sbuyinf2" android:name=".sbuyinf2"/>
+        <activity android:label="mbuyinf" android:name=".mbuyinf"/>
+        <activity android:label="mbuyinf2" android:name=".mbuyinf2"/>
+        <activity android:label="mview1" android:name=".mview1"/>
+        <activity android:label="mview2" android:name=".mview2"/>
+        <activity android:label="mview3" android:name=".mview3"/>
+        <activity android:label="commodity" android:name=".commodity"/>
+        <activity android:label="comtest" android:name=".comtest"/>
+        <activity android:label="singlebuy" android:name=".singlebuy"/>
+        <activity android:label="multibuy" android:name=".multibuy"/>
+        <activity android:label="findpage" android:name=".findpage"/>
+        <activity android:label="success" android:name=".success"/>
+        <activity android:label="store" android:name=".store"/>
+        <activity android:label="scheck" android:name=".scheck"/>
+        <activity android:label="mul1" android:name=".mul1"/>
+        <activity android:label="mul2" android:name=".mul2"/>
+        <activity android:label="mul3" android:name=".mul3"/>
+        <activity android:label="invite" android:name=".invite"/>
+        <activity android:label="invitenew" android:name=".invitenew"/>
+        <activity android:label="invitesearch" android:name=".invitesearch"/>
+        <activity android:label="inviteinf" android:name=".inviteinf"/>
+        <activity android:label="inviteinf2" android:name=".inviteinf2"/>
+        <activity android:label="invitecheck1" android:name=".invitecheck1"/>
+        <activity android:label="invitecheck2" android:name=".invitecheck2"/>
+        <activity android:label="invitecheck3" android:name=".invitecheck3"/>
+        <activity android:label="seepeopleInMap" android:name=".seepeopleInMap"/>
+        <meta-data
+			android:name="com.google.android.maps.v2.API_KEY"
+			android:value="AIzaSyBTPNKHA6xE_x-w1lxyD5ySEB82i6O7hWs"/>
+        <meta-data 
+              android:name="com.google.android.gms.version" 
+              android:value="@integer/google_play_services_version" />
+        
+    </application>
+
+</manifest>
